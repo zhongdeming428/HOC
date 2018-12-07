@@ -1,16 +1,5 @@
-class A {
-  constructor() {
-    this.b = 12;
-  }
-  @APlus
-  say() {}
-}
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
 
-function APlus(target, name, descriptor) {
-  descriptor.value = function() {
-    console.log('?');
-  }
-}
-
-let a = new A();
-a.say();
+ReactDOM.render(<App/>, document.getElementById('app'));
